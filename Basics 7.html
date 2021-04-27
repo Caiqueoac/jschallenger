@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Challenges</title>
+</head>
+<body>
+
+    <h1> Find next higher natural number that is divisble by y </h1>
+
+    <p>Write a function that takes two numbers, say x and y, as arguments</p>
+    <p>Check if x is divisible by y</p>
+    <p>If yes, return x</p>
+    <p>If not, return the next higher natural number that is divisible by y</p>
+
+    
+  
+
+    <script>
+
+            
+
+            function myFunction(x,y) {
+
+                if (x % y === 0){
+                    return x;
+                }else{
+                    while (!(x % y === 0)){
+                        x++;  
+                    }
+                    return x;
+                }
+                
+            }
+
+            console.log(myFunction(10,2));
+            console.log(myFunction(10,3));
+
+        
+    </script>
+    
+</body>
+</html>
