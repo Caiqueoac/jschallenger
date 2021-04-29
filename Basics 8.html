@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Challenges</title>
+</head>
+<body>
+
+    <h1> Find the correct word by incrementing letters in alphabet </h1>
+
+    <p>Write a function that takes a string as argument</p>
+    <p>As it is, the string has no meaning</p>
+    <p>Increment each letter to the next letter in the alphabet</p>
+    <p>Return the correct word</p>
+
+
+
+    <p>Open the console to see the output </p>
+
+    
+    
+
+    
+  
+
+    <script>
+
+        //string.replace
+
+            
+
+            function myFunction(palavra) {
+
+                let letras = [];
+                
+
+                for (let i=0; i< palavra.length; i++ ){
+                    letras[i]=String.fromCharCode(palavra.charCodeAt(i) + 1);
+                }
+                    
+                                  
+
+                console.log(letras.toString().replaceAll(',',''));
+                
+                
+
+                
+
+                                     
+
+                
+
+            }
+
+            myFunction('bnchmf');
+            myFunction('bgddrd');
+            myFunction('sdrshmf');
+
+            
+
+        
+    </script>
+    
+</body>
+</html>
